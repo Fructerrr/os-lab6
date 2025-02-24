@@ -1,0 +1,7 @@
+Компиляция NASM:
+
+nasm -f bin boot.asm -o boot.bin
+
+Запуск в QEMU:
+
+qemu-system-x86_64 -drive format=raw,file=boot.bin
